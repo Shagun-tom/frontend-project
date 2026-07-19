@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #896C6C;
+}
+
+.container{
+    width: 800px;
+    height: 750px;
+    background-color: #E5BEB5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #896C6C inset,
+                -2px -2px 5px #896C6C inset;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    animation: boxColor 5s linear 0s infinite alternate;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes boxColor {
+    0%{background-color: #E5BEB5;}
+    30%{background-color: #e5beb5c0;}
+    60%{background-color: #e5beb579;}
+    100%{background-color: #e5beb545;}
+}
+
+
+
+#name{
+    font-size: 40px;
+    background: linear-gradient(#896C6C, #E5BEB5, #EEE6CA, #896C6C);
+    padding: 5px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px grey;
+}
+
+#turn{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+#userTurn, #computerTurn{
+    display: flex;
+    gap: 5px;
+}
+ 
+#you, #userTurnCount, #computer,#computerTurn{
+    font-size: 30px;
+} 
+
+#vs{
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: #896C6C;
+    color: white;
+    padding: 5px;
+}
+
+#option{
+    display: flex;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.choose{
+    border-radius: 50%;
+    text-align:center;
+    overflow: hidden;
+    background-color: rgb(176, 176, 201);
+    box-shadow: 2px 2px 5px 2px black;
+    
+}
+
+.optionImage{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.choose p{
+    height: 30px;
+}
+
+#choice{
+    text-align: center;
+    font-size: 30px;
+    background: linear-gradient(#896C6C, #e5beb5c9, #EEE6CA, #896C6C);
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#player1_result , #player2_result{
+    display: flex;
+    gap: 5px;
+    box-shadow: 2px 2px 5px #F5FAE1, 3px 3px 5px black;
+    padding: 5px;
+}
+
+#player1, #userScore, #player2_result, #computerScore{
+    font-size: 30px;
+}
+
+#reset{
+    display: flex;
+    background-color:  #896C6C;;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 30px;
+    box-shadow: 2px 2px 5px black;
+    color: #EEE6CA;
+    animation: btn 4s linear 0s infinite reverse;
+}
+
+@keyframes btn {
+    0%{background-color: #896C6C; color: rgba(0, 0, 0, 0.73);}
+    20%{background-color: #896c6c96; color: black;}
+    40%{background-color: #896C6C; color: black;}
+    60%{background-color: #896c6c1c; color: black;}
+    80%{background-color: #896C6C; color: black;}
+    100%{background-color: #896C6C; color: black;}
+}
+
+#finalResult{
+    font-size: 30px;
+    
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rockPaperScissor.css">
+</head>
+<body>
+    <div class="container">
+        <p id="name">STONE PAPER SCISSORS</p>
+        <div id="turn">
+            <div id="userTurn">
+                <p id="you">You</p>
+                <div id="userTurnCount">0</div>
+            </div>
+            <div id="vs">VS</div>
+            <div id="computerTurn">
+                <p id="computer">Computer</p>
+                <div id="computerTurnCount">0</div>
+            </div>
+        </div>
+        <div id="option">
+            <div class="choose" id="choose_stone">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWFWxbQky44u2enl2jIcu12bKlCGiuOOrNtEPjshdJKw&s=10" alt="stone" class="optionImage">
+                <p>STONE</p>
+            </div>
+            <div class="choose" id="choose_paper">
+                <img src="https://img.magnific.com/free-photo/white-crumpled-paper-texture-background_1373-162.jpg?semt=ais_hybrid&w=740&q=80" alt="stone" class="optionImage">
+                <p>PAPER</p>
+            </div>
+            <div class="choose" id="choose_scissor">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKGqs_kYL0NQilzsOlHVtdgIeMWM1DmuL2Xr_iJfhFGg&s=10" alt="stone" class="optionImage">
+                <p>SCISSORS</p>
+            </div>
+        </div>
+        <div id="choice">Make Your Choice</div>
+        <div id="result">
+            <div id="player1_result">
+                <div id="player1">Your Score :</div>
+                <div id="userScore">0</div>
+            </div>
+            <div id="player2_result">
+                <div id="player2">Computer Score :</div>
+                <div id="computerScore">0</div>
+            </div>
+        </div>
+        <p id="finalResult"></p>
+        <center>
+           <button id="reset">Reset</button>
+        </center>
+    </div>
+    <script src="rockPaperScissor.js"></script>
+</body>
+</html>
